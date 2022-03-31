@@ -20,6 +20,8 @@ Here is our [data](https://www.kaggle.com/louischen7/2020-digix-advertisement-ct
 
 ## Exploratory Data Analysis
 
+In this part, we visualized our dataset from different perspectives. Here I displayed part of our conclusions. 
+
 
 
 ## Feature Engineering
