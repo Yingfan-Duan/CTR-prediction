@@ -28,19 +28,21 @@ Our target variable is binary, 1 represents clicked and 0 represents un-clicked.
 
 > You could check this [blog](https://yingfan-duan.github.io/2022/04/01/Machine-Learning-Deal-with-imbalanced-data/) for the possible solutions and use cases.
 
-![](/imgs/target-distribution.png)
+<img src="/imgs/target-distribution.png" width="300">
+
+
 
 Clearly our target variable is highly imbalanced. Actually, only 99583 rows are 1 among 2570068 rows of data. So we need to handle this problem for better model performance.
 
 - **CTR** 
 
-We calculated the mean of the target variable (CTR) for each day as shown in the bar plot below. We can see CTR of Day 6 & 7 are lower,Day 2 has the highest CTR.
+We calculated the mean of the target variable (CTR) for each day as shown in the bar plot below. We can see CTR of Day 6 & 7 are lower, Day 2 has the highest CTR.
 
-![](/imgs/target-distribution-by-day.png)
+<img src="/imgs/target-distribution-by-day.png" width="500">
 
-- User exposure versus target variable
+- **User exposure versus target variable**
 
-We also compared the distribution of user exposure for clicked and non-clicked groups. The user exposure was defined as the number of users that one ad was displayed to. And the comparison graph is shown as below. We can see that the blue area is significantly lower than the red area on the left hand side. This indicates that **exposing one ad to too many users may have some relation with low clicks. **
+We also compared the distribution of user exposure for clicked and non-clicked groups. The user exposure was defined as the number of users that one ad was displayed to. And the comparison graph is shown as below. We can see that the blue area is significantly lower than the red area on the left hand side. This indicated that **exposing one ad to too many users may have some relation with low clicks**.
 
 ![](/imgs/user_exposure.png)
 
