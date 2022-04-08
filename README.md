@@ -62,17 +62,33 @@ Also we notice that for some of the variables, although the variable itself had 
 
 ## Feature Engineering
 
-Our Feature Engineering part can be divided into **data preprocessing** and **feature construction**.
+Our Feature Engineering part can be divided into **data preprocessing** and **feature extraction**.
 
 ### Data Preprocessing
 
 - **Missing Value**
+
+  We have two features:`App Score` and `Membership Life Duration` have over 90% of values missing. We dropped these two columns. Then fill the rest missing values with -1 because there are some empirical evidence that -1 representing missing value will lift the model's performance a little.
+
+  ![](\imgs\missing_value.png)
+
 - **Basic feature extraction**
+
+  Feature `Online Time` is string which contains users' online time. We extracted the start time and end time from this feature. For example, if online time's value is "**4**\^5\^6\^7\^8\^\^9\^10\^11\^12\^13\^14\^15\^16\^17\^18\^19\^**20**", then we created two columns `start time` and `end time` whose values are 4 and 20.
+
 - **nominal data encoding**
+
+  For nominal categorical columns such as `city`, `gender`, `Advertisement ID`, `Device ID`, we use label encoder from python to encode their levels except for -1 because it represents missing values.
+
 - **ordinal data encoding**
+
+  For ordinal categorical columns such as `mobile device launch time`, `device price/size`, we recategorized these columns based on different criterions such as equally spaced value and frequency.
+
 - **memory reduction**
 
-### **Feature Construction**
+  
+
+### **Feature Extraction**
 
 - **exposure: count features**
 - **interaction: crossing count features**
