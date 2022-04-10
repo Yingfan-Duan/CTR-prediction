@@ -70,7 +70,7 @@ Our Feature Engineering part can be divided into **data preprocessing** and **fe
 
   We have two features:`App Score` and `Membership Life Duration` have over 90% of values missing. We dropped these two columns. Then fill the rest missing values with -1 because there are some empirical evidence that -1 representing missing value will lift the model's performance a little.
 
-  ![](\imgs\missing_value.png)
+  ![](/imgs/missing_value.png)
 
 - **Basic feature extraction**
 
@@ -131,15 +131,15 @@ After we constructed embedding features,  we apply the T-SNE in order to see if 
 
 From the 7 visualizations, we can clearly see that when we cluster by display form of ads, internet status, and device prices, we are more likely to have the clear clustering with patterns, while the city rank, age or slot types do not have obvious clustering pattern. 
 
-<img src="\imgs\tsne-with-pattern.png" style="zoom:67%;" />
+<img src="/imgs/tsne-with-pattern.png" style="zoom:67%;" />
 
-<img src="\imgs\tsne-without-pattern.png" style="zoom:67%;" />
+<img src="/imgs/tsne-without-pattern.png" style="zoom:67%;" />
 
 ## Modeling
 
 ### Model Framework
 
-![](\imgs\model-framework.png)
+![](/imgs/model-framework.png)
 
 First, instead of randomly splitting, We use day 1-6 for training, use day 7 for validation. 
 
@@ -151,7 +151,7 @@ Finally, we use AUC to compare model's performance on validation set.
 
 ### Feature Selection
 
-![](\imgs\comparison.png)
+![](/imgs/comparison.png)
 
 This line plot here show us the performance on validation set after adding different features. 
 
@@ -163,7 +163,7 @@ Finally, we selected original features and the first four set of features into o
 
 Then we compared the performance of LightGBM and Random Forest. And LightGBM was better than Random Forest no matter in which metric.
 
-![img](\imgs\model-performance.png)
+![img](/imgs/model-performance.png)
 
 After that, we tuned the hyperparameters for LightGBM and the **best AUC was around 0.79.** 
 
@@ -174,7 +174,7 @@ Finally let's look at the feature importance of LightGBM .  Here we displayed th
 3. Besides,the importance of slot_id means ad postition influence CTR greatly. 
 4. Finally, 4 device related features shows features like device type, price also impact CTR to some extent. 
 
-![](\imgs\top30features.png)
+![](/imgs/top30features.png)
 
 ## Challenges
 
