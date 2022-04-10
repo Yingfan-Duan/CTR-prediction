@@ -131,9 +131,7 @@ After we constructed embedding features,  we apply the T-SNE in order to see if 
 
 From the 7 visualizations, we can clearly see that when we cluster by display form of ads, internet status, and device prices, we are more likely to have the clear clustering with patterns, while the city rank, age or slot types do not have obvious clustering pattern. 
 
-<img src="/imgs/tsne-with-pattern.png" style="zoom:67%;" />
-
-<img src="/imgs/tsne-without-pattern.png" style="zoom:67%;" />
+![](/imgs/tsne.png)
 
 ## Modeling
 
