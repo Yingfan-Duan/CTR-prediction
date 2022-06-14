@@ -1,5 +1,5 @@
 # User Analysis: CTR Prediction on Features & Behaviors
-This is the final project for MScA 31008 Data Mining Principles course in UChicago. Our team members are [Yingfan Duan](https://github.com/Yingfan-Duan), [Yu Han](https://www.linkedin.com/in/hanyu99/), [Rocco Wu](https://www.linkedin.com/in/rocco-wu/), [Xinyan Gu]() and [Dawei Zhao](https://www.linkedin.com/in/dawei-zhao-901a93214/).
+This is the final project for MScA 31008 Data Mining Principles course in UChicago. Our team members are [Yingfan Duan](https://github.com/Yingfan-Duan), [Han Yu](https://www.linkedin.com/in/hanyu99/), [Rocco Wu](https://www.linkedin.com/in/rocco-wu/), [Xinyan Gu]() and [Dawei Zhao](https://www.linkedin.com/in/dawei-zhao-901a93214/).
 
 ## Project background
 
